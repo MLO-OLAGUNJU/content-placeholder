@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
+
 body {
   background-color: #ecf0f1;
+  font-family: "Roboto", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,6 +74,7 @@ img {
   color: #aaa;
   margin-top: 5px;
 }
+
 .animated-bg {
   background-image: linear-gradient(
     to right,
@@ -91,7 +91,16 @@ img {
   border-radius: 50px;
   display: inline-block;
   margin: 0;
-
   height: 10px;
   width: 100%;
+}
+
+@keyframes bgPos {
+  0% {
+    background-position: 50% 0;
+  }
+
+  100% {
+    background-position: -150% 0;
+  }
 }
