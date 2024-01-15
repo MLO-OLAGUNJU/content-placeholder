@@ -51,3 +51,11 @@ img {
   color: #777;
   margin: 10px 0 20px;
 }
+
+.author {
+  display: flex;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
